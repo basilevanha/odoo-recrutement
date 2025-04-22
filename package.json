@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "bootstrap": "4.4.1",
+    "postcss-loader": "^8.1.1",
+    "sass": "^1.86.0"
+  },
+  "scripts": {
+    "sass": "sass -w scss/index.scss static/index.css"
+  }
+}
