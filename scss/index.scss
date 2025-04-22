@@ -1,15 +1,13 @@
-// Default variables overrides
-@import "./variables.scss";
-
 // Import Bootstrap
 @import "./bootstrap-imports.scss";
 
+@import "./loader";
 
-body {
-    max-width: 900px;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0 auto;
+.card-header {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+
+    .nav-item {
+        flex: 0 0 auto;;
+    }
 }
