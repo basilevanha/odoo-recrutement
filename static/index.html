@@ -7,21 +7,21 @@
     <title>Odoo test - Basile Vanhaverbeke</title>
   </head>
   <body>
-    <div class="container-fluid pt-3">
+    <div class="container-fluid py-3">
       <div class="container p-0">
-        <h1>Odoo exercice - Basile Vanhaverbeke</h1>
+        <h1>Odoo exercice</h1>
         <p>Link to the github project 👉 <a href="https://github.com/basilevanha/odoo-recrutement">Odoo-recrutement</a></p>
-        
-        <h2>Variant A</h2>
+        <p>Link to the guidelines doc 👉 <a href="https://docs.google.com/document/d/1eOmZNgb1-7fofUVZVV_k3EocbU31cASOk-N5_hcEVok/edit">Instructions</a> </p>
+        <h2>Variant C</h2>
       </div>
 
-      <div class="card bg-dark border rounded-0 container p-0">
+      <div class="card custom-card rounded-0 container p-0" js-custom-card-container>
         <ul
           class="card-header nav nav-tabs pb-0 px-2 border-0"
           id="navigation"
           role="tablist"
         >
-          <li class="nav-item bg-light mx-1">
+          <li class="nav-item mx-1">
             <a
               class="nav-link rounded-0 active"
               id="nav-tab-1"
@@ -33,7 +33,7 @@
               >Tab 1</a
             >
           </li>
-          <li class="nav-item bg-light mx-1">
+          <li class="nav-item mx-1">
             <a
               class="nav-link rounded-0"
               id="nav-tab-2"
@@ -45,7 +45,7 @@
               >Tab 2</a
             >
           </li>
-          <li class="nav-item bg-light mx-1">
+          <li class="nav-item mx-1">
             <a
               class="nav-link rounded-0"
               id="nav-tab-3"
@@ -59,7 +59,7 @@
           </li>
           <li class="nav-item mx-1">
             <a
-              class="nav-link disabled rounded-0 bg-secondary text-light"
+              class="nav-link disabled rounded-0"
               href="#"
               tabindex="-1"
               aria-disabled="true"
@@ -67,7 +67,7 @@
             >
           </li>
         </ul>
-        <div class="bg-white card-body p-0 tab-content" id="navigationContent">
+        <div class="card-body p-0 tab-content" id="navigationContent">
           <div
             class="tab-pane fade show active"
             id="tab-1"
@@ -76,7 +76,7 @@
           >
             <div class="container py-3">
               <h3>Card title</h3>
-              <h4 class="text-secondary">Card subtitle</h4>
+              <h4 class="card-subtitle">Card subtitle</h4>
             </div>
             <div class="container">
               <div class="row border-top">
@@ -203,14 +203,29 @@
                     lead-in to additional content. This content is a little bit
                     longer.
                   </p>
-                  <p class="text-secondary">Last updated 3 mins ago.</p>
+                  <p class="card-info-timestamp">Last updated 3 mins ago.</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="card-footer text-white">2 days ago</div>
+        <div class="card-footer">2 days ago</div>
       </div>
+
+      <div class="container p-0 mt-3">
+        <h4>Change the card style :</h4>
+        <div class="btn-group-vertical">
+          <button class="btn btn-primary active" js-custom-card-btn data-version="primary">Primary</button>
+          <button class="btn btn-primary" js-custom-card-btn data-version="secondary">Secondary</button>
+          <button class="btn btn-primary" js-custom-card-btn data-version="success">Success</button>
+          <button class="btn btn-primary" js-custom-card-btn data-version="danger">Danger</button>
+          <button class="btn btn-primary" js-custom-card-btn data-version="warning">Warning</button>
+          <button class="btn btn-primary" js-custom-card-btn data-version="info">Info</button>
+          <button class="btn btn-primary" js-custom-card-btn data-version="light">Light</button>
+          <button class="btn btn-primary" js-custom-card-btn data-version="dark">Dark</button>
+        </div>
+      </div>
+
     </div>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -227,5 +242,6 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <script src="../js/customCard.js"></script>
   </body>
 </html>

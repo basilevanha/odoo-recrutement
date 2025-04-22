@@ -1,7 +1,6 @@
-// Import Bootstrap
-@import "./bootstrap-imports.scss";
-
+@import "./bootstrap-imports";
 @import "./loader";
+@import "./custom-card";
 
 .card-header {
     flex-wrap: nowrap;
@@ -10,4 +9,8 @@
     .nav-item {
         flex: 0 0 auto;;
     }
+}
+
+.img-fluid {
+    object-fit: cover;
 }

@@ -1,16 +1,14 @@
-// Grid containers
-//
-// Define the maximum width of `.container` for different screen sizes.
-
+// Grid variables
 $container-max-widths: (
-  sm: 600px,
+  sm: 600px
 );
 
+$grid-gutter-width: 40px;
+$nav-link-padding-x: 1.25rem;
+
+// Colors
 $theme-colors: (
   "light": #e9ecef
 );
-
-$grid-gutter-width:40px;
-$nav-link-padding-x: 1.25rem;
-
+$light: #e9ecef;
 $link-color: #65598f;

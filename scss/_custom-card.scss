@@ -1,0 +1,78 @@
+@mixin contextual-variation($bg, $text, $border: null) {
+  --custom-card-bg: #{$bg};
+  --custom-card-text: #{$text};
+  @if $border {
+    --custom-card-border: #{$border};
+  }
+}
+
+
+.custom-card {
+  --custom-card-bg: #{$dark};
+  --custom-card-text: #{$white};
+  --custom-card-border: #{$light};
+
+  background-color: var(--custom-card-bg);
+  border: 1px solid var(--custom-card-border, var(--custom-card-bg));
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+
+  .card-header {
+    .nav-item {
+      background-color: $light;
+
+      .nav-link {
+        &.disabled {
+          background-color: $secondary;
+          color: $light;
+        }
+      }
+    }
+  }
+
+  .card-body {
+    background-color: $white;
+
+    .card-subtitle {
+      color: $secondary;
+    }
+
+    .card-info-timestamp {
+      color: $secondary;
+    }
+  }
+  .card-footer {
+    color: var(--custom-card-text)
+  }
+}
+
+.custom-card.primary {
+  @include contextual-variation($dark, $white);
+}
+
+.custom-card.secondary {
+  @include contextual-variation(#a5468a, $white, #a5468a);
+}
+
+.custom-card.success {
+  @include contextual-variation($success, $white, $success);
+}
+
+.custom-card.danger {
+  @include contextual-variation($danger, $white);
+}
+
+.custom-card.warning {
+  @include contextual-variation($warning, $dark, $warning);
+}
+
+.custom-card.info {
+  @include contextual-variation($info, $black);
+}
+
+.custom-card.light {
+  @include contextual-variation($light, $black);
+}
+
+.custom-card.dark {
+  @include contextual-variation($dark, $white);
+}
