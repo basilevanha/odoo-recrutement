@@ -24,6 +24,8 @@
         &.disabled {
           background-color: $secondary;
           color: $light;
+          cursor: not-allowed;
+          pointer-events:visible;
         }
       }
     }
@@ -38,6 +40,22 @@
 
     .card-info-timestamp {
       color: $secondary;
+    }
+
+    .nav-link {
+      &.active {
+        background-color: $gray-200;
+      }
+      &:hover {
+        background-color: $gray-100;
+      }
+      &:focus,
+      &:focus-visible {
+        background-color: $gray-200;
+      }
+      &:active {
+        background-color: $gray-300;
+      }
     }
   }
   .card-footer {

@@ -12,7 +12,8 @@
         <h1>Odoo exercice</h1>
         <p>Link to the github project 👉 <a href="https://github.com/basilevanha/odoo-recrutement">Odoo-recrutement</a></p>
         <p>Link to the guidelines doc 👉 <a href="https://docs.google.com/document/d/1eOmZNgb1-7fofUVZVV_k3EocbU31cASOk-N5_hcEVok/edit">Instructions</a> </p>
-        <h2>Variant C</h2>
+        <p>Link to the UX report 👉 <a href="./ux-report.pdf">UX Report</a></p>
+        <h2>Variant D</h2>
       </div>
 
       <div class="card custom-card rounded-0 container p-0" js-custom-card-container>
@@ -20,6 +21,7 @@
           class="card-header nav nav-tabs pb-0 px-2 border-0"
           id="navigation"
           role="tablist"
+          js-nav-horizontal
         >
           <li class="nav-item mx-1">
             <a
@@ -30,6 +32,7 @@
               role="tab"
               aria-controls="tab-1"
               aria-selected="true"
+              js-nav-link
               >Tab 1</a
             >
           </li>
@@ -42,6 +45,7 @@
               role="tab"
               aria-controls="tab-2"
               aria-selected="false"
+              js-nav-link
               >Tab 2</a
             >
           </li>
@@ -54,6 +58,7 @@
               role="tab"
               aria-controls="tab-3"
               aria-selected="false"
+              js-nav-link
               >Tab 3</a
             >
           </li>
@@ -63,6 +68,7 @@
               href="#"
               tabindex="-1"
               aria-disabled="true"
+              js-nav-link
               >Disabled</a
             >
           </li>
@@ -84,6 +90,7 @@
                   class="col nav flex-column p-0 col-12 col-md-6"
                   id="itemsTab"
                   role="tablist"
+                  js-nav-vertical
                 >
                   <li class="nav-item">
                     <a
@@ -94,6 +101,7 @@
                       role="tab"
                       aria-controls="item1"
                       aria-selected="true"
+                      js-nav-link
                     >
                       An item</a
                     >
@@ -107,6 +115,7 @@
                       role="tab"
                       aria-controls="item2"
                       aria-selected="false"
+                      js-nav-link
                     >
                       A second item</a
                     >
@@ -120,6 +129,7 @@
                       role="tab"
                       aria-controls="item3"
                       aria-selected="false"
+                      js-nav-link
                     >
                       A third item</a
                     >
@@ -242,6 +252,7 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <script src="../js/accessibility.js"></script>
     <script src="../js/customCard.js"></script>
   </body>
 </html>
