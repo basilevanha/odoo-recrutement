@@ -1,10 +1,19 @@
 {
   "dependencies": {
-    "bootstrap": "4.4.1",
+    "bootstrap": "4.4.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "copy-webpack-plugin": "^13.0.0",
     "postcss-loader": "^8.1.1",
-    "sass": "^1.86.0"
+    "sass": "^1.86.0",
+    "webpack": "^5.99.7",
+    "webpack-cli": "^6.0.1"
   },
   "scripts": {
-    "sass": "sass -w scss/index.scss static/index.css"
+    "dev": "concurrently \"yarn sass\" \"yarn bundle\"",
+    "sass": "sass -w scss/index.scss dist/index.css",
+    "bundle": "webpack --config ./webpack.config.js --watch",
+    "clean": "rm -rf dist/*"
   }
 }

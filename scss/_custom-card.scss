@@ -44,17 +44,27 @@
 
     .nav-link {
       &.active {
-        background-color: $gray-200;
+        background-color: $gray-100;
+        &:focus,
+        &:focus-visible {
+          background-color: $gray-100;
+        }
+        &:active {
+          background-color: $gray-300;
+        }
+        &:hover {
+          background-color: $gray-200;
+        }
       }
       &:hover {
         background-color: $gray-100;
       }
       &:focus,
       &:focus-visible {
-        background-color: $gray-200;
+        background-color: $gray-300;
       }
       &:active {
-        background-color: $gray-300;
+        background-color: $gray-200;
       }
     }
   }
