@@ -5,13 +5,15 @@
   "devDependencies": {
     "concurrently": "^9.1.2",
     "copy-webpack-plugin": "^13.0.0",
+    "http-server": "^14.1.1",
     "postcss-loader": "^8.1.1",
     "sass": "^1.86.0",
     "webpack": "^5.99.7",
     "webpack-cli": "^6.0.1"
   },
   "scripts": {
-    "dev": "concurrently \"yarn sass\" \"yarn bundle\"",
+    "server" : "http-server dist -o",
+    "dev": "concurrently \"yarn sass\" \"yarn bundle\" \"yarn server\"",
     "sass": "sass -w scss/index.scss dist/index.css",
     "bundle": "webpack --config ./webpack.config.js --watch",
     "clean": "rm -rf dist/*"
